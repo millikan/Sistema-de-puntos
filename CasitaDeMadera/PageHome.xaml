@@ -1,0 +1,61 @@
+﻿<Page x:Class="CasitaDeMadera.PageHome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CasitaDeMadera"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="700"
+      Title="PageHome">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="206,10,0,0" TextWrapping="Wrap" Text="Casita de Madera" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Foreground="#FF52330A"/>
+        <Label Content="Número de telefóno:" HorizontalAlignment="Left" Margin="89,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.829,0.404" FontSize="18" FontFamily="Arial" FontWeight="Bold"/>
+        <Label Content="Total de compra:" HorizontalAlignment="Left" Margin="89,160,0,0" VerticalAlignment="Top" FontSize="18" Width="162" FontFamily="Arial" FontWeight="Bold"/>
+        <Label Content="Observaciones:" HorizontalAlignment="Left" Margin="89,244,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Arial" FontWeight="Bold"/>
+        <Label Content="Puntos por agregar:" HorizontalAlignment="Left" Margin="94,376,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.12,0.371" FontFamily="Arial" FontWeight="Bold"/>
+        <Label x:Name="LbPuntos" Content="" HorizontalAlignment="Left" Margin="161,407,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontFamily="Arial" Foreground="#FFF70404"/>
+        <TextBox x:Name="NumeroTel" HorizontalAlignment="Left" Height="28" Margin="93,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" MaxLength="10" FontSize="16" FontFamily="Arial" BorderBrush="Black" PreviewTextInput="Numero_Tel_PreviewTextInput" PreviewKeyDown="Numero_Tel_PreviewKeyDown" BorderThickness="2"/>
+        <TextBox x:Name="TotalComp" HorizontalAlignment="Left" Height="28" Margin="89,196,0,0" VerticalAlignment="Top" Width="225" MaxLength="10" BorderBrush="Black" FontSize="16" FontFamily="Arial" PreviewTextInput="TotalComp_PreviewTextInput" PreviewKeyDown="TotalComp_PreviewKeyDown" BorderThickness="2"/>
+        <TextBox x:Name="Observ" HorizontalAlignment="Left" Height="82" Margin="89,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" VerticalScrollBarVisibility="Visible" FontSize="14" FontFamily="Arial" BorderBrush="Black" BorderThickness="2"/>
+        <Button x:Name="Butto_Agre_Punt" Content="Agregar puntos" HorizontalAlignment="Left" Margin="116,457,0,0" VerticalAlignment="Top" Width="160" Height="30" FontSize="16" FontFamily="Arial" BorderBrush="#FFCCDBEF" Click="Butto_Agre_Punt_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFCCDBEF" Offset="0.881"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="1"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="1"/>
+                    <GradientStop Color="#FF0464E6" Offset="0.993"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Button_Agregar_usu" Content="Agregar usuario" HorizontalAlignment="Left" Margin="432,155,0,0" VerticalAlignment="Top" Width="160" Height="30" FontSize="16"  FontFamily="Arial" BorderBrush="#FFCCDBEF" Click="Button_Agregar_usu_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFCCDBEF" Offset="0.881"/>
+                    <GradientStop Color="#FF0464E6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Canjear_puntos" Content="Canjear puntos" HorizontalAlignment="Left" Margin="432,259,0,0" VerticalAlignment="Top" Width="160" Height="30" FontSize="16"  FontFamily="Arial" BorderBrush="#FFCCDBEF" Click="Canjear_puntos_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFCCDBEF" Offset="0.881"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="1"/>
+                    <GradientStop Color="#FF0464E6" Offset="0.997"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Button_Historial" Content="Historial de usuarios" HorizontalAlignment="Left" Margin="432,363,0,0" VerticalAlignment="Top" Width="160
+                " Height="30" FontSize="16" FontFamily="Arial" BorderBrush="#FFCCDBEF" Click="Button_Historial_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFCCDBEF" Offset="0.881"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="1"/>
+                    <GradientStop Color="#FF0464E6" Offset="0.997"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+    </Grid>
+</Page>

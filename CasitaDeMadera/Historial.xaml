@@ -1,0 +1,62 @@
+﻿<Page x:Class="CasitaDeMadera.Historial"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CasitaDeMadera"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="700"
+      Title="Historial">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="272,10,0,0" TextWrapping="Wrap" Text="Historial" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Foreground="#FF52330A"/>
+        <Label Content="Buscar usuario:" HorizontalAlignment="Left" Margin="46,64,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontFamily="Arial"/>
+        <TextBox x:Name="Buscar" HorizontalAlignment="Left" Height="30" Margin="231,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="377" FontSize="14" PreviewKeyDown="Buscar_PreviewKeyDown" BorderThickness="2"/>
+        <DataGrid HorizontalAlignment="Left" Height="305" Margin="10,129,0,0" VerticalAlignment="Top" Width="680" HorizontalScrollBarVisibility="Visible" FontSize="16" FontWeight="Bold" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Nombre del cliente"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Número telefónico"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Puntos totales"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Tipo de cliente"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Ultima compra"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Ultima fecha de compra"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Observaciones"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Puntos canjeados"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="ultima fecha de canjeo"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="EditUs" Content="Editar usuario" HorizontalAlignment="Left" Margin="10,466,0,0" VerticalAlignment="Top" Width="140" Height="30" FontSize="16" FontFamily="Arial" BorderBrush="#FFCCDBEF" Click="EditUs_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFCCDBEF" Offset="0.881"/>
+                    <GradientStop Color="#FF0464E6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="EliminarUs" Content="Eliminar usuario" HorizontalAlignment="Left" Margin="192,466,0,0" VerticalAlignment="Top" Width="140" Height="30" RenderTransformOrigin="1.704,0.273" FontSize="16" FontFamily="Arial" BorderBrush="#FFCCDBEF" Click="EliminarUs_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFCCDBEF" Offset="0.881"/>
+                    <GradientStop Color="#FF0464E6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="GuardarCam" Content="Guardar cambios" HorizontalAlignment="Left" Margin="369,466,0,0" VerticalAlignment="Top" Width="140" Height="30" FontSize="16" FontFamily="Arial" BorderBrush="#FFCCDBEF" Click="GuardarCam_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFCCDBEF" Offset="0.881"/>
+                    <GradientStop Color="#FF0464E6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="VerUs" Content="Ver usuario" HorizontalAlignment="Left" Margin="550,466,0,0" VerticalAlignment="Top" Width="140" Height="30" FontSize="16" FontFamily="Arial" BorderBrush="#FFCCDBEF" Click="VerUs_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFCCDBEF" Offset="0.881"/>
+                    <GradientStop Color="#FF0464E6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
